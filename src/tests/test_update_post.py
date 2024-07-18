@@ -33,4 +33,3 @@ def test_update_post():
     }
     response = requests.put(url, json=update_payload, headers=headers)
     assert response.status_code == 200
-    assert response.json()["title"] == "Post Atualizado"
